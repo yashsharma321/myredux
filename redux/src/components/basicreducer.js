@@ -4,7 +4,6 @@ const BasicDetails = (state = [], action) => {
   if (action.type === "basic") {
     mydata.push(action.data);
   }
-  console.log(mydata);
   return mydata;
 };
 

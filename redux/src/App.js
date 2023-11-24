@@ -35,7 +35,7 @@ function App() {
         </div>
       </div>
 
-      <div className="row text-center mt-4">
+      <div className="row  mt-4">
         <div className="col-lg-12 ">
           <Routes>
             <Route exact path="/" element={<Basic />} />

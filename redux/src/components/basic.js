@@ -1,11 +1,13 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
 
 export const Basic = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [mobile, setMobile] = useState("");
 
+  const navigate = useNavigate();
   let dispatch = useDispatch();
   const save = () => {
     let dispatchdata = {
@@ -13,6 +15,7 @@ export const Basic = () => {
       data: [name, email, mobile],
     };
     dispatch(dispatchdata);
+    navigate("contact");
   };
   return (
     <div className="container">
@@ -20,7 +23,7 @@ export const Basic = () => {
         <div className="col-lg-4 offset-4">
           <table className="table table-borderless">
             <tbody>
-              <tr>
+              <tr className="text-center">
                 <td colSpan="2">
                   <strong>Enter Basic Details</strong>
                 </td>
@@ -58,7 +61,7 @@ export const Basic = () => {
                   />
                 </td>
               </tr>
-              <tr>
+              <tr className="text-center">
                 <td colSpan="2">
                   <button className="btn btn-primary rounded" onClick={save}>
                     Save and continue
