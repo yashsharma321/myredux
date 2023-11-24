@@ -9,11 +9,13 @@ export const Basic = () => {
 
   const navigate = useNavigate();
   let dispatch = useDispatch();
+
   const save = () => {
     let dispatchdata = {
       type: "basic",
       data: [name, email, mobile],
     };
+
     dispatch(dispatchdata);
     navigate("contact");
   };

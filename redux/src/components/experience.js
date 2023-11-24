@@ -3,9 +3,9 @@ import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 
 export const Experience = () => {
-  const [companyworked, setCompanyworked] = useState();
-  const [projectworked, setProjectworked] = useState();
-  const [totalexp, setTotalexp] = useState();
+  const [companyworked, setCompanyworked] = useState("");
+  const [projectworked, setProjectworked] = useState("");
+  const [totalexp, setTotalexp] = useState("");
   const [techskills, setTechskills] = useState("");
 
   let mydata = {

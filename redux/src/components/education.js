@@ -10,18 +10,20 @@ export const Education = () => {
 
   let dispatch = useDispatch();
   let navigate = useNavigate();
-  const save = () => {
-    let myobj = {
-      highestQualification: highestQualification,
-      college: college,
-      passoutyear: passoutyear,
-      percentage: percentage,
-    };
 
+  let myobj = {
+    highestQualification: highestQualification,
+    college: college,
+    passoutyear: passoutyear,
+    percentage: percentage,
+  };
+
+  const save = () => {
     let dispatchdata = { type: "education", data: myobj };
     dispatch(dispatchdata);
     navigate("../experience");
   };
+  
   return (
     <div className="container">
       <div className="row">

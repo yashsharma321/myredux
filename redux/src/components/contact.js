@@ -5,11 +5,18 @@ import { useNavigate } from "react-router-dom";
 export const Contact = () => {
   const [presentaddr, setPresentaddr] = useState("");
   const [permanentaddr, setPermanentaddr] = useState("");
+
   let dispatch = useDispatch();
   let navigate = useNavigate();
+
   const save = () => {
-    let dispatchdata = { type: "contact", data: [presentaddr, permanentaddr] };
+    let dispatchdata = {
+      type: "contact",
+      data: [presentaddr, permanentaddr],
+    };
+
     dispatch(dispatchdata);
+    
     navigate("../education");
   };
 
