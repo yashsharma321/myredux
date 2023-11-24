@@ -116,7 +116,7 @@ export const Viewall = () => {
             </tbody>
           </table>
         </div>
-        <div className="col-lg-12 text-center mt-4">
+        <div className="col-lg-12 text-center my-4">
           <button className="btn btn-primary btn-lg rounded">Submit</button>
         </div>
       </div>
