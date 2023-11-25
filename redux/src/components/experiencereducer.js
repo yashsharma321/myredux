@@ -2,7 +2,7 @@ const ExperienceDetails = (state = [], action) => {
   let mydata = Object.assign([], state);
 
   if (action.type === "experience") {
-    mydata.push(action.data);
+    mydata = action.data;
   }
 
   return mydata;

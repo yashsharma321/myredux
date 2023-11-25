@@ -24,15 +24,15 @@ export const Viewall = () => {
               </tr>
               <tr>
                 <td>Name: </td>
-                <td>{basicDetails[0]?.[0]}</td>
+                <td>{basicDetails[0]}</td>
               </tr>
               <tr>
                 <td>Email:</td>
-                <td>{basicDetails[0]?.[1]}</td>
+                <td>{basicDetails[1]}</td>
               </tr>
               <tr>
                 <td>Phone:</td>
-                <td>{basicDetails[0]?.[2]}</td>
+                <td>{basicDetails[2]}</td>
               </tr>
             </tbody>
           </table>
@@ -95,19 +95,19 @@ export const Viewall = () => {
               </tr>
               <tr>
                 <td>Total no of company worked: </td>
-                <td>{experienceDetails[0]?.["companyworked"]}</td>
+                <td>{experienceDetails?.["companyworked"]}</td>
               </tr>
               <tr>
                 <td>Total project worked:</td>
-                <td>{experienceDetails[0]?.["projectworked"]}</td>
+                <td>{experienceDetails?.["projectworked"]}</td>
               </tr>
               <tr>
                 <td>Total years of experience:</td>
-                <td>{experienceDetails[0]?.["totalexp"]}</td>
+                <td>{experienceDetails?.["totalexp"]}</td>
               </tr>
               <tr>
                 <td>Your all tech skills:</td>
-                <td>{experienceDetails[0]?.["techskills"]}</td>
+                <td>{experienceDetails?.["techskills"]}</td>
               </tr>
             </tbody>
           </table>
